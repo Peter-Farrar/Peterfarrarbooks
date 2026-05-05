@@ -6,7 +6,6 @@ on:
       - main
     paths:
       - 'blog/**'
-
 jobs:
   build-feed:
     runs-on: ubuntu-latest
