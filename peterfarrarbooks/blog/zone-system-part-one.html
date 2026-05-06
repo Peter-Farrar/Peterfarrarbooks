@@ -9,9 +9,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ════════════════════════════════════════════════════════════
-     EDIT PER POST: description · canonical · title · OG tags
-     ════════════════════════════════════════════════════════════ -->
 <meta name="description" content="Discover how Ansel Adams' Zone System can transform your photography from recording a scene into interpreting light with intention.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.peterfarrarbooks.com/blog/zone-system-part-one.html" />
@@ -24,9 +21,6 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Peter Farrar Books">
 
-<!-- ════════════════════════════════════════════════════════════
-     JSON-LD BLOCK 1: site-wide — same on every post, no edits
-     ════════════════════════════════════════════════════════════ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -57,9 +51,6 @@
 }
 </script>
 
-<!-- ════════════════════════════════════════════════════════════
-     JSON-LD BLOCK 2: BlogPosting — edit per post
-     ════════════════════════════════════════════════════════════ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -104,9 +95,6 @@
 
 <style>
 
-  /* ════ START: SECTION A — copy to every post, no edits needed ════ */
-
-  /* ── A) BREADCRUMB & BACK NAV ── */
   .post-breadcrumb {
     padding: 24px 0 0;
     font-family: var(--font-sans);
@@ -137,7 +125,6 @@
   .post-back::before { content: '←'; }
   .post-back:hover { color: var(--gold); }
 
-  /* ── A) COMMENT FORM ── */
   .comments-section {
     max-width: 760px;
     margin: 0 auto;
@@ -242,7 +229,6 @@
     padding: 20px 0;
   }
 
-  /* ── A) APPROVED COMMENTS ── */
   .approved-comments {
     margin-top: 48px;
     display: flex;
@@ -294,9 +280,6 @@
     margin: 0;
   }
 
-  /* ════ END: SECTION A ════ */
-
-  /* ════ START: SECTION B — post-specific styles ════ */
 
   .pf-post {
     max-width: 760px;
@@ -335,7 +318,6 @@
     border-bottom: 1px solid rgba(176,133,89,0.1);
   }
 
-  /* ════ END: SECTION B ════ */
 
 </style>
 </head>
@@ -366,7 +348,6 @@
 
 <main>
 
-  <!-- BREADCRUMB — edit: last item = short post title -->
   <div class="container">
     <nav class="post-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a><span>/</span><a href="/blog/">Blog</a><span>/</span>The Zone System – Part One
@@ -374,7 +355,6 @@
     <a href="/blog/" class="post-back">All Posts</a>
   </div>
 
-  <!-- ════ START: POST CONTENT — paste entire <div class="pf-post">...</div> from original post file here. Do NOT include its <style> block — that goes in <head> section B above ════ -->
   <div class="pf-post">
 
     <h1>
@@ -416,14 +396,10 @@
     </div>
 
   </div>
-  <!-- ════ END: POST CONTENT ════ -->
-
-  <!-- ════ START: COMMENT FORM — copy to every post, no edits except Formspree ID ════ -->
   <section class="comments-section">
 
     <p class="comments-section__title">Leave a Comment</p>
 
-    <!-- EDIT: replace YOUR_FORMSPREE_ID with your actual Formspree endpoint -->
     <form id="commentForm" class="comment-form"
           action="https://formspree.io/f/YOUR_FORMSPREE_ID"
           method="POST">
@@ -459,7 +435,6 @@
     </div>
 
   </section>
-  <!-- ════ END: COMMENT FORM ════ -->
 
   <!-- ════ START: APPROVED COMMENTS
        No comments yet? Leave this block exactly as-is — nothing renders.
@@ -532,7 +507,6 @@
 
 <script src="/js/main.js"></script>
 
-<!-- ════ START: COMMENT FORM SCRIPT — copy to every post, no edits needed ════ -->
 <script>
   const form = document.getElementById('commentForm');
   const success = document.getElementById('commentSuccess');
@@ -550,7 +524,6 @@
     }
   });
 </script>
-<!-- ════ END: COMMENT FORM SCRIPT ════ -->
 
 </body>
 </html>
