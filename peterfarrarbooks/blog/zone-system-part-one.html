@@ -337,6 +337,30 @@ th { color: #b08559; text-transform: uppercase; font-size: 10px; letter-spacing:
     <strong>Coming Next:</strong> In Part Two, we’ll bring the Zone System into the modern era, exploring how to use these principles with histograms and RAW files.
   </div>
 
+ <!-- COMMENT FORM -->
+ <!-- BEFORE -->
+<div class="comment-form__row">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email (not published)" required>
+</div>
+
+<!-- AFTER -->
+<div class="comment-form__row">
+  <div class="comment-form__field">
+    <label for="comment-name">Name</label>
+    <input id="comment-name" type="text" name="name" placeholder="Your Name" required>
+  </div>
+  <div class="comment-form__field">
+    <label for="comment-email">Email <span class="comment-form__note-inline">(not published)</span></label>
+    <input id="comment-email" type="email" name="email" placeholder="your@email.com" required>
+  </div>
+</div>
+</form>
+    <div class="comment-success" id="commentSuccess">
+      Thank you — your comment has been received and will be reviewed shortly.
+    </div>
+  
+  
   <div class="pf-post__cta">
     <div class="pf-post__cta-cover">
       <img src="https://www.peterfarrarbooks.com/images/photography-field-guide.jpg" alt="The Complete Photography Field Guide by Peter Farrar">
