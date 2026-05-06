@@ -111,58 +111,6 @@ gtag('config', 'G-XW133STPV9');
   border-bottom: 1px solid rgba(176,133,89,0.1);
 }
 
-.comments-section {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 60px 24px 80px;
-  border-top: 1px solid rgba(176,133,89,0.2);
-}
-
-.comment-form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.comment-form__row {
-  display: flex;
-  gap: 16px;
-}
-
-.comment-form__field {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  flex: 1;
-}
-
-.comment-form input,
-.comment-form textarea {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(176,133,89,0.25);
-  color: rgba(255,255,255,0.82);
-  padding: 12px 16px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.comment-form textarea {
-  min-height: 140px;
-  resize: vertical;
-}
-
-.comment-form button {
-  padding: 12px 28px;
-  background: #b08559;
-  color: #080806;
-  border: none;
-  cursor: pointer;
-}
-
-.comment-success {
-  display: none;
-  padding: 20px 0;
-}
 
 </style>
 
@@ -224,79 +172,97 @@ gtag('config', 'G-XW133STPV9');
   </div>
 
 </div>
+ <!-- ════════════════════════════════════════════════════════
+       COMMENTS SECTION
+       Always include the full section below on every post.
 
-<section class="comments-section">
+       TWO PARTS:
+         1. COMMENT FORM — always present (Formspree handles it)
+         2. APPROVED COMMENTS — only add the <div class="comment">
+            blocks when you have real approved comments to show.
+            Until then, leave the approved-comments div empty
+            (or remove it entirely — either is fine).
+       ════════════════════════════════════════════════════════ -->
+  <section class="comments-section">
 
-  <h2>Leave a Comment</h2>
+    <!-- ════ START: COMMENT FORM — copy to every post, no edits except Formspree ID ════ -->
+    <!-- EDIT: replace YOUR_FORMSPREE_ID with your actual Formspree endpoint -->
+    <p class="comments-section__title">Leave a Comment</p>
 
-  <!-- IMPORTANT -->
-  <!-- REPLACE WITH YOUR REAL FORMSPREE ENDPOINT -->
+    <form id="commentForm" class="comment-form"
+          action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+          method="POST">
 
-  <form
-    id="commentForm"
-    class="comment-form"
-    action="https://formspree.io/f/YOUR_FORM_ID"
-    method="POST"
-  >
-
-    <div class="comment-form__row">
-
-      <div class="comment-form__field">
-        <label for="comment-name">Name</label>
-
-        <input
-          id="comment-name"
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          required
-        >
+      <div class="comment-form__row">
+        <div class="comment-form__field">
+          <label for="comment-name">Name</label>
+          <input id="comment-name" type="text" name="name"
+                 placeholder="Your Name" required>
+        </div>
+        <div class="comment-form__field">
+          <label for="comment-email">
+            Email <span class="comment-form__note-inline">(not published)</span>
+          </label>
+          <input id="comment-email" type="email" name="email"
+                 placeholder="your@email.com" required>
+        </div>
       </div>
 
       <div class="comment-form__field">
-        <label for="comment-email">
-          Email (not published)
-        </label>
-
-        <input
-          id="comment-email"
-          type="email"
-          name="email"
-          placeholder="your@email.com"
-          required
-        >
+        <label for="comment-message">Comment</label>
+        <textarea id="comment-message" name="message"
+                  placeholder="Your comment..." required></textarea>
       </div>
 
+      <button type="submit">Submit Comment</button>
+      <p class="comment-form__note">Comments are moderated and will appear once approved.</p>
+
+    </form>
+
+    <div class="comment-success" id="commentSuccess">
+      Thank you — your comment has been received and will be reviewed shortly.
     </div>
+    <!-- ════ END: COMMENT FORM ════ -->
 
-    <div class="comment-form__field">
+    <!-- ════ START: APPROVED COMMENTS
+         No comments yet? Leave this block exactly as-is — nothing renders.
+         Have an approved comment? Uncomment the title, add a comment block.
+         ════ -->
+    <div class="approved-comments">
 
-      <label for="comment-message">
-        Comment
-      </label>
+      <!-- Uncomment when you have at least one approved comment:
+      <p class="approved-comments__title">Reader Comments</p>
+      -->
 
-      <textarea
-        id="comment-message"
-        name="message"
-        placeholder="Your comment..."
-        required
-      ></textarea>
+      <!-- EXAMPLE — copy this block for each approved comment, then delete this example -->
+      <!--
+      <div class="comment">
+        <p class="comment-author">John Smith <span>— 5 May 2026</span></p>
+        <p class="comment-text">Really useful post — the section on delegation was particularly clear.</p>
+      </div>
+      -->
 
     </div>
-
-    <button type="submit">
-      Submit Comment
-    </button>
-
-  </form>
-
-  <div class="comment-success" id="commentSuccess">
-    Thank you — your comment has been received and will be reviewed shortly.
-  </div>
-
-</section>
-
-</main>
+    <!-- ════ END: APPROVED COMMENTS ════ -->
+  <!-- ════ START: COMMENT FORM SCRIPT — copy to every post, no edits needed ════ -->
+<script>
+  const form = document.getElementById('commentForm');
+  const success = document.getElementById('commentSuccess');
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+      form.style.display = 'none';
+      success.style.display = 'block';
+    }
+  });
+</script>
+<!-- ════ END: COMMENT FORM SCRIPT ════ -->
 
 <footer class="site-footer">
   <div class="container footer-inner">
@@ -306,76 +272,5 @@ gtag('config', 'G-XW133STPV9');
 
 <script src="/js/main.js"></script>
 
-<script>
-
-const form = document.getElementById('commentForm');
-const success = document.getElementById('commentSuccess');
-
-if(form){
-
-  form.addEventListener('submit', async function(e){
-
-    e.preventDefault();
-
-    const data = new FormData(form);
-
-    const response = await fetch(form.action, {
-      method: 'POST',
-      body: data,
-      headers: {
-        'Accept': 'application/json'
-      }
-    });
-
-    if(response.ok){
-      form.style.display = 'none';
-      success.style.display = 'block';
-    }
-
-  });
-
-}
-
-</script>
-
 </body>
-</html>
-```
 
-## Critical Items
-
-### 1. Replace this with your REAL Formspree endpoint
-
-```html
-action="https://formspree.io/f/YOUR_FORM_ID"
-```
-
-### 2. Never duplicate closing style tags
-
-Only ONE:
-
-```html
-</style>
-```
-
-### 3. Keep the JavaScript at the bottom of the page
-
-Immediately before:
-
-```html
-</body>
-```
-
-### 4. Do not paste comment form HTML inside the style block
-
-CSS only inside:
-
-```html
-<style>
-```
-
-and
-
-```html
-</style>
-```
