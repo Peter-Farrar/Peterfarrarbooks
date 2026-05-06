@@ -1,6 +1,3 @@
-# Fixed Blog Post — Working Comment System Version
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,26 +9,63 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Discover how Ansel Adams’ Zone System can transform your photography from recording a scene into interpreting light with intention.">
+<!-- ════════════════════════════════════════════════════════════
+     EDIT PER POST: description · canonical · title · OG tags
+     ════════════════════════════════════════════════════════════ -->
+<meta name="description" content="Discover how Ansel Adams' Zone System can transform your photography from recording a scene into interpreting light with intention.">
 <meta name="robots" content="index, follow">
-
-<link rel="canonical" href="https://www.peterfarrarbooks.com/blog/zone-system-part-one.html">
-
+<link rel="canonical" href="https://www.peterfarrarbooks.com/blog/zone-system-part-one.html" />
 <title>The Zone System Explained – Part One: Seeing Light Like Ansel Adams | Peter Farrar Books</title>
 
 <meta property="og:title" content="The Zone System Explained – Part One: Seeing Light Like Ansel Adams">
-<meta property="og:description" content="Discover how Ansel Adams’ Zone System can transform your photography from recording a scene into interpreting light with intention.">
+<meta property="og:description" content="Discover how Ansel Adams' Zone System can transform your photography from recording a scene into interpreting light with intention.">
 <meta property="og:image" content="https://www.peterfarrarbooks.com/images/zone1.jpg">
 <meta property="og:url" content="https://www.peterfarrarbooks.com/blog/zone-system-part-one.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Peter Farrar Books">
 
+<!-- ════════════════════════════════════════════════════════════
+     JSON-LD BLOCK 1: site-wide — same on every post, no edits
+     ════════════════════════════════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.peterfarrarbooks.com/#website",
+      "url": "https://www.peterfarrarbooks.com/",
+      "name": "Peter Farrar Books",
+      "description": "Leadership and photography books by Peter Farrar",
+      "publisher": { "@id": "https://www.peterfarrarbooks.com/#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.peterfarrarbooks.com/#person",
+      "name": "Peter Farrar",
+      "url": "https://www.peterfarrarbooks.com/about",
+      "jobTitle": "Author, Photographer and Leadership Expert",
+      "description": "Author of leadership and photography books with 30+ years experience",
+      "sameAs": [
+        "https://www.linkedin.com/in/pfarrar/",
+        "https://www.instagram.com/kennethlightstudios/",
+        "https://www.facebook.com/KennethLightStudios/",
+        "https://x.com/Kennethstudios/"
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- ════════════════════════════════════════════════════════════
+     JSON-LD BLOCK 2: BlogPosting — edit per post
+     ════════════════════════════════════════════════════════════ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "The Zone System Explained – Part One: Seeing Light Like Ansel Adams",
-  "description": "Discover how Ansel Adams’ Zone System can transform your photography from recording a scene into interpreting light with intention.",
+  "description": "Discover how Ansel Adams' Zone System can transform your photography from recording a scene into interpreting light with intention.",
   "image": "https://www.peterfarrarbooks.com/images/zone1.jpg",
   "author": {
     "@type": "Person",
@@ -52,70 +86,259 @@
     "@type": "WebPage",
     "@id": "https://www.peterfarrarbooks.com/blog/zone-system-part-one.html"
   },
-  "inLanguage": "en-GB"
+  "inLanguage": "en-GB",
+  "keywords": "zone system photography, Ansel Adams zone system, exposure control photography, black and white photography zones, tonal range photography"
 }
 </script>
 
+<!-- GOOGLE ANALYTICS — no edits needed -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XW133STPV9"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-XW133STPV9');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XW133STPV9');
 </script>
 
 <link rel="stylesheet" href="/css/styles.css">
 
 <style>
 
-.pf-post {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 40px 24px 80px;
-  font-family: 'EB Garamond', serif;
-  font-size: 19px;
-  color: rgba(255,255,255,0.82);
-  line-height: 1.85;
-}
+  /* ════ START: SECTION A — copy to every post, no edits needed ════ */
 
-.pf-post h1 {
-  font-size: clamp(32px, 4.5vw, 52px);
-  color: #fff;
-  line-height: 1.1;
-}
+  /* ── A) BREADCRUMB & BACK NAV ── */
+  .post-breadcrumb {
+    padding: 24px 0 0;
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 300;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .post-breadcrumb a { color: var(--gold); text-decoration: none; }
+  .post-breadcrumb a:hover { color: var(--gold-light); }
+  .post-breadcrumb span { margin: 0 6px; color: var(--text-muted); }
 
-.pf-post h2 {
-  font-size: 28px;
-  margin-top: 52px;
-  border-bottom: 1px solid rgba(176,133,89,0.2);
-}
+  .post-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-decoration: none;
+    padding: 16px 0 0;
+    transition: color var(--transition);
+  }
+  .post-back::before { content: '←'; }
+  .post-back:hover { color: var(--gold); }
 
-.pf-post__cover img {
-  width: 100%;
-  display: block;
-}
+  /* ── A) COMMENT FORM ── */
+  .comments-section {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+    border-top: 1px solid rgba(176,133,89,0.2);
+  }
+  .comments-section__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #b08559;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+  .comments-section__title::before {
+    content: '';
+    width: 36px;
+    height: 1px;
+    background: #b08559;
+    flex-shrink: 0;
+  }
+  .comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .comment-form__row {
+    display: flex;
+    gap: 16px;
+  }
+  .comment-form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+  }
+  .comment-form__field label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+  }
+  .comment-form__note-inline {
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-transform: none;
+    color: rgba(255,255,255,0.25);
+  }
+  .comment-form input,
+  .comment-form textarea {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(176,133,89,0.25);
+    color: rgba(255,255,255,0.82);
+    font-family: 'EB Garamond', serif;
+    font-size: 17px;
+    padding: 12px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .comment-form input:focus,
+  .comment-form textarea:focus { border-color: rgba(176,133,89,0.6); }
+  .comment-form input::placeholder,
+  .comment-form textarea::placeholder { color: rgba(255,255,255,0.25); }
+  .comment-form textarea {
+    min-height: 140px;
+    resize: vertical;
+  }
+  .comment-form button {
+    align-self: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 12px 28px;
+    background: #b08559;
+    color: #080806;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  .comment-form button:hover { opacity: 0.85; }
+  .comment-form__note {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.05em;
+  }
+  .comment-success {
+    display: none;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    color: rgba(255,255,255,0.6);
+    padding: 20px 0;
+  }
 
-.pf-post__table-wrapper {
-  overflow-x: auto;
-  margin: 2.5rem 0;
-}
+  /* ── A) APPROVED COMMENTS ── */
+  .approved-comments {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .approved-comments__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #b08559;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+  .approved-comments__title::before {
+    content: '';
+    width: 36px;
+    height: 1px;
+    background: #b08559;
+    flex-shrink: 0;
+  }
+  .comment {
+    border-left: 2px solid rgba(176,133,89,0.25);
+    padding: 4px 0 4px 20px;
+  }
+  .comment-author {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin: 0 0 8px;
+  }
+  .comment-author span {
+    color: rgba(176,133,89,0.5);
+    font-weight: 300;
+    margin-left: 8px;
+  }
+  .comment-text {
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.7;
+    margin: 0;
+  }
 
-.pf-post table {
-  width: 100%;
-  border-collapse: collapse;
-}
+  /* ════ END: SECTION A ════ */
 
-.pf-post th,
-.pf-post td {
-  padding: 15px;
-  border-bottom: 1px solid rgba(176,133,89,0.1);
-}
+  /* ════ START: SECTION B — post-specific styles ════ */
 
+  .pf-post {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+    font-family: 'EB Garamond', serif;
+    font-size: 19px;
+    color: rgba(255,255,255,0.82);
+    line-height: 1.85;
+  }
+  .pf-post h1 {
+    font-size: clamp(32px, 4.5vw, 52px);
+    color: #fff;
+    line-height: 1.1;
+  }
+  .pf-post h2 {
+    font-size: 28px;
+    margin-top: 52px;
+    border-bottom: 1px solid rgba(176,133,89,0.2);
+  }
+  .pf-post__cover img {
+    width: 100%;
+    display: block;
+  }
+  .pf-post__table-wrapper {
+    overflow-x: auto;
+    margin: 2.5rem 0;
+  }
+  .pf-post table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .pf-post th,
+  .pf-post td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(176,133,89,0.1);
+  }
+
+  /* ════ END: SECTION B ════ */
 
 </style>
-
 </head>
-
 <body>
 
 <header class="site-header">
@@ -126,69 +349,81 @@ gtag('config', 'G-XW133STPV9');
         <span class="logo-sub">Books</span>
       </a>
     </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/books">Books</a></li>
+        <li><a href="/coming-soon">Coming 2026</a></li>
+        <li><a href="/blog" class="active">Blog</a></li>
+        <li><a href="/coaching">Coaching</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 
 <main>
 
-<div class="pf-post">
-
-  <h1>
-    The Zone System Explained – Part One:
-    <em>Seeing Light Like Ansel Adams</em>
-  </h1>
-
-  <div class="pf-post__cover">
-    <img src="https://www.peterfarrarbooks.com/images/zone1.jpg"
-         alt="Dramatic black and white landscape demonstrating Zone System principles">
+  <!-- BREADCRUMB — edit: last item = short post title -->
+  <div class="container">
+    <nav class="post-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a><span>/</span><a href="/blog/">Blog</a><span>/</span>The Zone System – Part One
+    </nav>
+    <a href="/blog/" class="post-back">All Posts</a>
   </div>
 
-  <p>
-    Few names in photography carry the same weight as Ansel Adams.
-    His black and white landscapes remain some of the most striking images ever made.
-  </p>
+  <!-- ════ START: POST CONTENT — paste entire <div class="pf-post">...</div> from original post file here. Do NOT include its <style> block — that goes in <head> section B above ════ -->
+  <div class="pf-post">
 
-  <h2>What Is the Zone System?</h2>
+    <h1>
+      The Zone System Explained – Part One:
+      <em>Seeing Light Like Ansel Adams</em>
+    </h1>
 
-  <p>
-    Developed in the 1930s as a way to control exposure and tonal range,
-    the system allows you to translate the world into intentional shades.
-  </p>
+    <div class="pf-post__cover">
+      <img src="https://www.peterfarrarbooks.com/images/zone1.jpg"
+           alt="Dramatic black and white landscape demonstrating Zone System principles">
+    </div>
 
-  <div class="pf-post__table-wrapper">
-    <table>
-      <thead>
-        <tr>
-          <th>Zone</th>
-          <th>Tonal Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>Zone 0</td><td>Pure black, no detail</td></tr>
-        <tr><td>Zone V</td><td>Middle grey</td></tr>
-        <tr><td>Zone X</td><td>Pure white, no detail</td></tr>
-      </tbody>
-    </table>
+    <p>
+      Few names in photography carry the same weight as Ansel Adams.
+      His black and white landscapes remain some of the most striking images ever made.
+    </p>
+
+    <h2>What Is the Zone System?</h2>
+
+    <p>
+      Developed in the 1930s as a way to control exposure and tonal range,
+      the system allows you to translate the world into intentional shades.
+    </p>
+
+    <div class="pf-post__table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Zone</th>
+            <th>Tonal Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Zone 0</td><td>Pure black, no detail</td></tr>
+          <tr><td>Zone V</td><td>Middle grey</td></tr>
+          <tr><td>Zone X</td><td>Pure white, no detail</td></tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
+  <!-- ════ END: POST CONTENT ════ -->
 
-</div>
- <!-- ════════════════════════════════════════════════════════
-       COMMENTS SECTION
-       Always include the full section below on every post.
-
-       TWO PARTS:
-         1. COMMENT FORM — always present (Formspree handles it)
-         2. APPROVED COMMENTS — only add the <div class="comment">
-            blocks when you have real approved comments to show.
-            Until then, leave the approved-comments div empty
-            (or remove it entirely — either is fine).
-       ════════════════════════════════════════════════════════ -->
+  <!-- ════ START: COMMENT FORM — copy to every post, no edits except Formspree ID ════ -->
   <section class="comments-section">
 
-    <!-- ════ START: COMMENT FORM — copy to every post, no edits except Formspree ID ════ -->
-    <!-- EDIT: replace YOUR_FORMSPREE_ID with your actual Formspree endpoint -->
     <p class="comments-section__title">Leave a Comment</p>
 
+    <!-- EDIT: replace YOUR_FORMSPREE_ID with your actual Formspree endpoint -->
     <form id="commentForm" class="comment-form"
           action="https://formspree.io/f/YOUR_FORMSPREE_ID"
           method="POST">
@@ -222,29 +457,82 @@ gtag('config', 'G-XW133STPV9');
     <div class="comment-success" id="commentSuccess">
       Thank you — your comment has been received and will be reviewed shortly.
     </div>
-    <!-- ════ END: COMMENT FORM ════ -->
 
-    <!-- ════ START: APPROVED COMMENTS
-         No comments yet? Leave this block exactly as-is — nothing renders.
-         Have an approved comment? Uncomment the title, add a comment block.
-         ════ -->
-    <div class="approved-comments">
+  </section>
+  <!-- ════ END: COMMENT FORM ════ -->
 
-      <!-- Uncomment when you have at least one approved comment:
-      <p class="approved-comments__title">Reader Comments</p>
-      -->
+  <!-- ════ START: APPROVED COMMENTS
+       No comments yet? Leave this block exactly as-is — nothing renders.
+       Have an approved comment? Uncomment the title, add a comment block.
+       ════ -->
+  <div class="approved-comments">
 
-      <!-- EXAMPLE — copy this block for each approved comment, then delete this example -->
-      <!--
-      <div class="comment">
-        <p class="comment-author">John Smith <span>— 5 May 2026</span></p>
-        <p class="comment-text">Really useful post — the section on delegation was particularly clear.</p>
-      </div>
-      -->
+    <!-- Uncomment when you have at least one approved comment:
+    <p class="approved-comments__title">Reader Comments</p>
+    -->
 
+    <!-- EXAMPLE — copy this block for each approved comment, then delete this example -->
+    <!--
+    <div class="comment">
+      <p class="comment-author">John Smith <span>— 5 May 2026</span></p>
+      <p class="comment-text">Really useful post — the section on zones was particularly clear.</p>
     </div>
-    <!-- ════ END: APPROVED COMMENTS ════ -->
-  <!-- ════ START: COMMENT FORM SCRIPT — copy to every post, no edits needed ════ -->
+    -->
+
+  </div>
+  <!-- ════ END: APPROVED COMMENTS ════ -->
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo-name">Peter Farrar</span>
+      <span class="logo-sub">Books</span>
+      <p>Author · Photographer · Leadership Expert</p>
+    </div>
+    <div class="footer-nav">
+      <p class="footer-heading">Pages</p>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/books">Published Books</a></li>
+        <li><a href="/coming-soon">Coming 2026</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/coaching">Coaching</a></li>
+        <li><a href="/about">About Peter</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/privacy">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-nav">
+      <p class="footer-heading">Books</p>
+      <ul>
+        <li><a href="/books#series">Photography Series</a></li>
+        <li><a href="/books#field-guide">Complete Field Guide</a></li>
+        <li><a href="/books#leadership">Leadership: The Culture Fix</a></li>
+        <li><a href="/coming-soon">Coming Soon</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <p class="footer-heading">Connect</p>
+      <ul>
+        <li><a href="https://www.facebook.com/KennethLightStudios/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com/kennethlightstudios/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/pfarrar/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://x.com/Kennethstudios/" target="_blank" rel="noopener">X (Twitter)</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; Peter Farrar. All Rights Reserved. | <a href="/privacy">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+
+<!-- ════ START: COMMENT FORM SCRIPT — copy to every post, no edits needed ════ -->
 <script>
   const form = document.getElementById('commentForm');
   const success = document.getElementById('commentSuccess');
@@ -264,13 +552,5 @@ gtag('config', 'G-XW133STPV9');
 </script>
 <!-- ════ END: COMMENT FORM SCRIPT ════ -->
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>&copy; Peter Farrar. All Rights Reserved.</p>
-  </div>
-</footer>
-
-<script src="/js/main.js"></script>
-
 </body>
-
+</html>
