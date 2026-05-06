@@ -1,399 +1,319 @@
-<!-- ========================================================= -->
-<!-- BLOG TEMPLATE WITH COMMENT SYSTEM - REUSABLE VERSION -->
-<!-- COPY THE MARKED SECTIONS INTO FUTURE BLOG POSTS -->
-<!-- ========================================================= -->
+# Fixed Blog Post — Working Comment System Version
 
+```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
-  <!-- ========================================================= -->
-  <!-- STANDARD SEO / META -->
-  <!-- REPLACE PER POST -->
-  <!-- ========================================================= -->
+<link rel="alternate" type="application/rss+xml" title="Peter Farrar Books Blog" href="https://www.peterfarrarbooks.com/feed.xml">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/appletouch.png">
+<link rel="icon" type="image/png" href="/images/favicon.png">
 
-  <link rel="alternate" type="application/rss+xml"
-        title="Peter Farrar Books Blog"
-        href="https://www.peterfarrarbooks.com/feed.xml">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/appletouch.png">
-  <link rel="icon" type="image/png" href="/images/favicon.png">
+<meta name="description" content="Discover how Ansel Adams’ Zone System can transform your photography from recording a scene into interpreting light with intention.">
+<meta name="robots" content="index, follow">
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://www.peterfarrarbooks.com/blog/zone-system-part-one.html">
 
-  <meta name="description"
-        content="Discover how Ansel Adams’ Zone System can transform your photography from recording a scene into interpreting light with intention.">
+<title>The Zone System Explained – Part One: Seeing Light Like Ansel Adams | Peter Farrar Books</title>
 
-  <meta name="robots" content="index, follow">
+<meta property="og:title" content="The Zone System Explained – Part One: Seeing Light Like Ansel Adams">
+<meta property="og:description" content="Discover how Ansel Adams’ Zone System can transform your photography from recording a scene into interpreting light with intention.">
+<meta property="og:image" content="https://www.peterfarrarbooks.com/images/zone1.jpg">
+<meta property="og:url" content="https://www.peterfarrarbooks.com/blog/zone-system-part-one.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Peter Farrar Books">
 
-  <link rel="canonical"
-        href="https://www.peterfarrarbooks.com/blog/zone-system-part-one.html">
-
-  <title>
-    The Zone System Explained – Part One: Seeing Light Like Ansel Adams
-    | Peter Farrar Books
-  </title>
-
-  <!-- Open Graph -->
-
-  <meta property="og:title"
-        content="The Zone System Explained – Part One: Seeing Light Like Ansel Adams">
-
-  <meta property="og:description"
-        content="Discover how Ansel Adams’ Zone System can transform your photography from recording a scene into interpreting light with intention.">
-
-  <meta property="og:image"
-        content="https://www.peterfarrarbooks.com/images/zone1.jpg">
-
-  <meta property="og:url"
-        content="https://www.peterfarrarbooks.com/blog/zone-system-part-one.html">
-
-  <meta property="og:type" content="article">
-  <meta property="og:site_name" content="Peter Farrar Books">
-
-  <!-- ========================================================= -->
-  <!-- JSON-LD -->
-  <!-- REPLACE PER POST -->
-  <!-- ========================================================= -->
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"BlogPosting",
-    "headline":"The Zone System Explained – Part One: Seeing Light Like Ansel Adams",
-    "description":"Discover how Ansel Adams’ Zone System can transform your photography from recording a scene into interpreting light with intention.",
-    "image":"https://www.peterfarrarbooks.com/images/zone1.jpg",
-    "author":{
-      "@type":"Person",
-      "name":"Peter Farrar"
-    },
-    "publisher":{
-      "@type":"Organization",
-      "name":"Peter Farrar Books"
-    },
-    "datePublished":"2026-04-20",
-    "dateModified":"2026-04-20",
-    "mainEntityOfPage":{
-      "@type":"WebPage",
-      "@id":"https://www.peterfarrarbooks.com/blog/zone-system-part-one.html"
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The Zone System Explained – Part One: Seeing Light Like Ansel Adams",
+  "description": "Discover how Ansel Adams’ Zone System can transform your photography from recording a scene into interpreting light with intention.",
+  "image": "https://www.peterfarrarbooks.com/images/zone1.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "Peter Farrar",
+    "url": "https://www.peterfarrarbooks.com/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Peter Farrar Books",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.peterfarrarbooks.com/images/favicon.png"
     }
-  }
-  </script>
+  },
+  "datePublished": "2026-04-20",
+  "dateModified": "2026-04-20",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.peterfarrarbooks.com/blog/zone-system-part-one.html"
+  },
+  "inLanguage": "en-GB"
+}
+</script>
 
-  <!-- ========================================================= -->
-  <!-- GOOGLE ANALYTICS -->
-  <!-- KEEP ON ALL BLOGS -->
-  <!-- ========================================================= -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XW133STPV9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XW133STPV9');
+</script>
 
-  <script async
-          src="https://www.googletagmanager.com/gtag/js?id=G-XW133STPV9"></script>
+<link rel="stylesheet" href="/css/styles.css">
 
-  <script>
-    window.dataLayer = window.dataLayer || [];
+<style>
 
-    function gtag(){
-      dataLayer.push(arguments);
-    }
+.pf-post {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  font-family: 'EB Garamond', serif;
+  font-size: 19px;
+  color: rgba(255,255,255,0.82);
+  line-height: 1.85;
+}
 
-    gtag('js', new Date());
-    gtag('config', 'G-XW133STPV9');
-  </script>
+.pf-post h1 {
+  font-size: clamp(32px, 4.5vw, 52px);
+  color: #fff;
+  line-height: 1.1;
+}
 
-  <link rel="stylesheet" href="/css/styles.css">
+.pf-post h2 {
+  font-size: 28px;
+  margin-top: 52px;
+  border-bottom: 1px solid rgba(176,133,89,0.2);
+}
 
-  <!-- ========================================================= -->
-  <!-- BLOG PAGE STYLES -->
-  <!-- KEEP ON ALL BLOGS -->
-  <!-- ========================================================= -->
+.pf-post__cover img {
+  width: 100%;
+  display: block;
+}
 
-  <style>
+.pf-post__table-wrapper {
+  overflow-x: auto;
+  margin: 2.5rem 0;
+}
 
-    .post-breadcrumb {
-      padding: 24px 0 0;
-    }
+.pf-post table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
-    .post-back {
-      display: inline-flex;
-      padding: 16px 0 0;
-    }
+.pf-post th,
+.pf-post td {
+  padding: 15px;
+  border-bottom: 1px solid rgba(176,133,89,0.1);
+}
 
-    .pf-post {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 40px 24px 80px;
-      font-family: 'EB Garamond', serif;
-      font-size: 19px;
-      color: rgba(255,255,255,0.82);
-      line-height: 1.85;
-    }
+.comments-section {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+  border-top: 1px solid rgba(176,133,89,0.2);
+}
 
-    .pf-post h1 {
-      font-size: clamp(32px, 4.5vw, 52px);
-      color: #fff;
-    }
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
-    .pf-post h2 {
-      font-size: 28px;
-      margin-top: 52px;
-      border-bottom: 1px solid rgba(176,133,89,0.2);
-    }
+.comment-form__row {
+  display: flex;
+  gap: 16px;
+}
 
-    .pf-post__cover img {
-      width: 100%;
-      display: block;
-    }
+.comment-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
 
-    .pf-post__table-wrapper {
-      overflow-x: auto;
-      margin: 2.5rem 0;
-    }
+.comment-form input,
+.comment-form textarea {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(176,133,89,0.25);
+  color: rgba(255,255,255,0.82);
+  padding: 12px 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
+.comment-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
 
-    th, td {
-      padding: 15px;
-      border-bottom: 1px solid rgba(176,133,89,0.1);
-    }
+.comment-form button {
+  padding: 12px 28px;
+  background: #b08559;
+  color: #080806;
+  border: none;
+  cursor: pointer;
+}
 
-    /* ========================================================= */
-    /* COMMENT SYSTEM STYLES                                     */
-    /* COPY THIS WHOLE BLOCK TO EVERY BLOG TEMPLATE              */
-    /* ========================================================= */
+.comment-success {
+  display: none;
+  padding: 20px 0;
+}
 
-    .comments-section {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 60px 24px 80px;
-      border-top: 1px solid rgba(176,133,89,0.2);
-    }
-
-    .comment-form {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .comment-form__row {
-      display: flex;
-      gap: 16px;
-    }
-
-    .comment-form__field {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      flex: 1;
-    }
-
-    .comment-form input,
-    .comment-form textarea {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(176,133,89,0.25);
-      color: rgba(255,255,255,0.82);
-      padding: 12px 16px;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    .comment-form textarea {
-      min-height: 140px;
-      resize: vertical;
-    }
-
-    .comment-form button {
-      padding: 12px 28px;
-      background: #b08559;
-      color: #080806;
-      border: none;
-      cursor: pointer;
-    }
-
-    .comment-success {
-      display: none;
-      padding: 20px 0;
-    }
-
-  </style>
+</style>
 
 </head>
 
 <body>
 
-<!-- ========================================================= -->
-<!-- SITE HEADER -->
-<!-- KEEP ON ALL BLOGS -->
-<!-- ========================================================= -->
-
 <header class="site-header">
-
-  <!-- your nav -->
-
+  <div class="container header-inner">
+    <div class="logo">
+      <a href="/">
+        <span class="logo-name">Peter Farrar</span>
+        <span class="logo-sub">Books</span>
+      </a>
+    </div>
+  </div>
 </header>
 
 <main>
 
-  <!-- ========================================================= -->
-  <!-- BREADCRUMB -->
-  <!-- CHANGE TITLE PER POST -->
-  <!-- ========================================================= -->
+<div class="pf-post">
 
-  <div class="container">
+  <h1>
+    The Zone System Explained – Part One:
+    <em>Seeing Light Like Ansel Adams</em>
+  </h1>
 
-    <nav class="post-breadcrumb">
-      <a href="/">Home</a>
-      /
-      <a href="/blog/">Blog</a>
-      /
-      Zone System Part One
-    </nav>
-
-    <a href="/blog/" class="post-back">
-      All Posts
-    </a>
-
+  <div class="pf-post__cover">
+    <img src="https://www.peterfarrarbooks.com/images/zone1.jpg"
+         alt="Dramatic black and white landscape demonstrating Zone System principles">
   </div>
 
-  <!-- ========================================================= -->
-  <!-- BLOG CONTENT -->
-  <!-- REPLACE THIS WHOLE BLOCK PER POST -->
-  <!-- ========================================================= -->
+  <p>
+    Few names in photography carry the same weight as Ansel Adams.
+    His black and white landscapes remain some of the most striking images ever made.
+  </p>
 
-  <div class="pf-post">
+  <h2>What Is the Zone System?</h2>
 
-    <h1>
-      The Zone System Explained – Part One:
-      <em>Seeing Light Like Ansel Adams</em>
-    </h1>
+  <p>
+    Developed in the 1930s as a way to control exposure and tonal range,
+    the system allows you to translate the world into intentional shades.
+  </p>
 
-    <div class="pf-post__cover">
-      <img src="https://www.peterfarrarbooks.com/images/zone1.jpg"
-           alt="Zone System photography">
-    </div>
-
-    <p>
-      Few names in photography carry the same weight as Ansel Adams...
-    </p>
-
-    <h2>What Is the Zone System?</h2>
-
-    <p>
-      Developed in the 1930s...
-    </p>
-
+  <div class="pf-post__table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Zone</th>
+          <th>Tonal Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Zone 0</td><td>Pure black, no detail</td></tr>
+        <tr><td>Zone V</td><td>Middle grey</td></tr>
+        <tr><td>Zone X</td><td>Pure white, no detail</td></tr>
+      </tbody>
+    </table>
   </div>
 
-  <!-- ========================================================= -->
-  <!-- COMMENT SYSTEM -->
-  <!-- COPY THIS ENTIRE SECTION INTO EVERY BLOG -->
-  <!-- ========================================================= -->
+</div>
 
-  <section class="comments-section">
+<section class="comments-section">
 
-    <h2>Leave a Comment</h2>
+  <h2>Leave a Comment</h2>
 
-    <!-- ===================================================== -->
-    <!-- IMPORTANT -->
-    <!-- REPLACE FORMSPREE URL WITH YOUR REAL ENDPOINT -->
-    <!-- ===================================================== -->
+  <!-- IMPORTANT -->
+  <!-- REPLACE WITH YOUR REAL FORMSPREE ENDPOINT -->
 
-    <form
-      id="commentForm"
-      class="comment-form"
-      action="https://formspree.io/f/YOUR_FORM_ID"
-      method="POST"
-    >
+  <form
+    id="commentForm"
+    class="comment-form"
+    action="https://formspree.io/f/YOUR_FORM_ID"
+    method="POST"
+  >
 
-      <div class="comment-form__row">
+    <div class="comment-form__row">
 
-        <div class="comment-form__field">
-          <label for="comment-name">Name</label>
+      <div class="comment-form__field">
+        <label for="comment-name">Name</label>
 
-          <input
-            id="comment-name"
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-          >
-        </div>
-
-        <div class="comment-form__field">
-          <label for="comment-email">
-            Email (not published)
-          </label>
-
-          <input
-            id="comment-email"
-            type="email"
-            name="email"
-            placeholder="your@email.com"
-            required
-          >
-        </div>
-
+        <input
+          id="comment-name"
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+        >
       </div>
 
       <div class="comment-form__field">
-
-        <label for="comment-message">
-          Comment
+        <label for="comment-email">
+          Email (not published)
         </label>
 
-        <textarea
-          id="comment-message"
-          name="message"
-          placeholder="Your comment..."
+        <input
+          id="comment-email"
+          type="email"
+          name="email"
+          placeholder="your@email.com"
           required
-        ></textarea>
-
+        >
       </div>
 
-      <button type="submit">
-        Submit Comment
-      </button>
-
-    </form>
-
-    <!-- SUCCESS MESSAGE -->
-
-    <div class="comment-success" id="commentSuccess">
-      Thank you — your comment has been received.
     </div>
 
-  </section>
+    <div class="comment-form__field">
+
+      <label for="comment-message">
+        Comment
+      </label>
+
+      <textarea
+        id="comment-message"
+        name="message"
+        placeholder="Your comment..."
+        required
+      ></textarea>
+
+    </div>
+
+    <button type="submit">
+      Submit Comment
+    </button>
+
+  </form>
+
+  <div class="comment-success" id="commentSuccess">
+    Thank you — your comment has been received and will be reviewed shortly.
+  </div>
+
+</section>
 
 </main>
 
-<!-- ========================================================= -->
-<!-- FOOTER -->
-<!-- KEEP ON ALL BLOGS -->
-<!-- ========================================================= -->
-
 <footer class="site-footer">
-
-  <!-- your footer -->
-
+  <div class="container footer-inner">
+    <p>&copy; Peter Farrar. All Rights Reserved.</p>
+  </div>
 </footer>
 
 <script src="/js/main.js"></script>
 
-<!-- ========================================================= -->
-<!-- COMMENT SUBMIT SCRIPT -->
-<!-- COPY THIS INTO EVERY BLOG -->
-<!-- MUST STAY BEFORE </body> -->
-<!-- ========================================================= -->
-
 <script>
 
-  const form = document.getElementById('commentForm');
-  const success = document.getElementById('commentSuccess');
+const form = document.getElementById('commentForm');
+const success = document.getElementById('commentSuccess');
 
-  form.addEventListener('submit', async function(e) {
+if(form){
+
+  form.addEventListener('submit', async function(e){
 
     e.preventDefault();
 
@@ -407,16 +327,55 @@
       }
     });
 
-    if (response.ok) {
-
+    if(response.ok){
       form.style.display = 'none';
       success.style.display = 'block';
-
     }
 
   });
+
+}
 
 </script>
 
 </body>
 </html>
+```
+
+## Critical Items
+
+### 1. Replace this with your REAL Formspree endpoint
+
+```html
+action="https://formspree.io/f/YOUR_FORM_ID"
+```
+
+### 2. Never duplicate closing style tags
+
+Only ONE:
+
+```html
+</style>
+```
+
+### 3. Keep the JavaScript at the bottom of the page
+
+Immediately before:
+
+```html
+</body>
+```
+
+### 4. Do not paste comment form HTML inside the style block
+
+CSS only inside:
+
+```html
+<style>
+```
+
+and
+
+```html
+</style>
+```
