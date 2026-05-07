@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="alternate" type="application/rss+xml" title="Peter Farrar Books Blog" href="https://www.peterfarrarbooks.com/feed.xml">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/appletouch.png">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="[DISCRIPTION HERE WITH RULE LESS THAN 155 WITH SPACES]">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="[FULL URL FOR PAGE INCLUDING HTTPS:// AND .HTML]" />
+<title>[TITLE HERE ENDING IN LESS THAN 60 WITH SPACES] | Peter Farrar Books</title>
+
+<meta property="og:title" content="[TITLE HERE AGAIN">
+<meta property="og:description" content="[DISCRIPTION AGAIN]">
+<meta property="og:image" content="https://www.peterfarrarbooks.com/images/[IMAGE HERE]">
+<meta property="og:url" content="https://www.peterfarrarbooks.com/blog/[PAGE SLUG WITH HTML]">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Peter Farrar Books">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.peterfarrarbooks.com/#website",
+      "url": "https://www.peterfarrarbooks.com/",
+      "name": "Peter Farrar Books",
+      "description": "Leadership and photography books by Peter Farrar",
+      "publisher": { "@id": "https://www.peterfarrarbooks.com/#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.peterfarrarbooks.com/#person",
+      "name": "Peter Farrar",
+      "url": "https://www.peterfarrarbooks.com/about",
+      "jobTitle": "Author, Photographer and Leadership Expert",
+      "description": "Author of leadership and photography books with 30+ years experience",
+      "sameAs": [
+        "https://www.linkedin.com/in/pfarrar/",
+        "https://www.instagram.com/kennethlightstudios/",
+        "https://www.facebook.com/KennethLightStudios/",
+        "https://x.com/Kennethstudios/"
+      ]
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "[HEADLINE IS THE TITLE OF THE BLOG POST SAME RULES]",
+  "description": "[DISCRIPTION ON THE POST SAME AS FROM ABOVE SAME RULES]",
+  "image": "https://www.peterfarrarbooks.com/images/[IMAGE FOR BLOG POST]",
+  "author": {
+    "@type": "Person",
+    "name": "Peter Farrar",
+    "url": "https://www.peterfarrarbooks.com/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Peter Farrar Books",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.peterfarrarbooks.com/images/favicon.png"
+    }
+  },
+  "datePublished": "[2026-04-20 BLOG POST DATE]",
+  "dateModified": "[2026-04-20 BLOG POST DATE]",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.peterfarrarbooks.com/blog/[SLUG OF BLOG POST WITH HTML]"
+  },
+  "inLanguage": "en-GB",
+  "keywords": "[10 MAX KEYWORDS FROM THIS POST]"
+}
+</script>
+
+<!-- GOOGLE ANALYTICS — no edits needed -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XW133STPV9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XW133STPV9');
+</script>
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<style>
+
+  .post-breadcrumb {
+    padding: 24px 0 0;
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 300;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .post-breadcrumb a { color: var(--gold); text-decoration: none; }
+  .post-breadcrumb a:hover { color: var(--gold-light); }
+  .post-breadcrumb span { margin: 0 6px; color: var(--text-muted); }
+
+  .post-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-decoration: none;
+    padding: 16px 0 0;
+    transition: color var(--transition);
+  }
+  .post-back::before { content: '←'; }
+  .post-back:hover { color: var(--gold); }
+
+  .comments-section {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+    border-top: 1px solid rgba(176,133,89,0.2);
+  }
+  .comments-section__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #b08559;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+  .comments-section__title::before {
+    content: '';
+    width: 36px;
+    height: 1px;
+    background: #b08559;
+    flex-shrink: 0;
+  }
+  .comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .comment-form__row {
+    display: flex;
+    gap: 16px;
+  }
+  .comment-form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+  }
+  .comment-form__field label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+  }
+  .comment-form__note-inline {
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-transform: none;
+    color: rgba(255,255,255,0.25);
+  }
+  .comment-form input,
+  .comment-form textarea {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(176,133,89,0.25);
+    color: rgba(255,255,255,0.82);
+    font-family: 'EB Garamond', serif;
+    font-size: 17px;
+    padding: 12px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .comment-form input:focus,
+  .comment-form textarea:focus { border-color: rgba(176,133,89,0.6); }
+  .comment-form input::placeholder,
+  .comment-form textarea::placeholder { color: rgba(255,255,255,0.25); }
+  .comment-form textarea {
+    min-height: 140px;
+    resize: vertical;
+  }
+  .comment-form button {
+    align-self: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 12px 28px;
+    background: #b08559;
+    color: #080806;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  .comment-form button:hover { opacity: 0.85; }
+  .comment-form__note {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.05em;
+  }
+  .comment-success {
+    display: none;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    color: rgba(255,255,255,0.6);
+    padding: 20px 0;
+  }
+  .approved-comments {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .approved-comments__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #b08559;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+  .approved-comments__title::before {
+    content: '';
+    width: 36px;
+    height: 1px;
+    background: #b08559;
+    flex-shrink: 0;
+  }
+  .comment {
+    border-left: 2px solid rgba(176,133,89,0.25);
+    padding: 4px 0 4px 20px;
+  }
+  .comment-author {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin: 0 0 8px;
+  }
+  .comment-author span {
+    color: rgba(176,133,89,0.5);
+    font-weight: 300;
+    margin-left: 8px;
+  }
+  .comment-text {
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .pf-post {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+    font-family: 'EB Garamond', serif;
+    font-size: 19px;
+    color: rgba(255,255,255,0.82);
+    line-height: 1.85;
+  }
+  .pf-post h1 {
+    font-size: clamp(32px, 4.5vw, 52px);
+    color: #fff;
+    line-height: 1.1;
+  }
+  .pf-post h2 {
+    font-size: 28px;
+    margin-top: 52px;
+    border-bottom: 1px solid rgba(176,133,89,0.2);
+  }
+  .pf-post__cover img {
+    width: 100%;
+    display: block;
+  }
+  .pf-post__table-wrapper {
+    overflow-x: auto;
+    margin: 2.5rem 0;
+  }
+  .pf-post table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .pf-post th,
+  .pf-post td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(176,133,89,0.1);
+  }
+
+
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <a href="/">
+        <span class="logo-name">Peter Farrar</span>
+        <span class="logo-sub">Books</span>
+      </a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/books">Books</a></li>
+        <li><a href="/coming-soon">Coming 2026</a></li>
+        <li><a href="/blog" class="active">Blog</a></li>
+        <li><a href="/coaching">Coaching</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+</ul>
+
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="container">
+    <nav class="post-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a><span>/</span><a href="/blog/">Blog</a><span>/</span>[SHORT BLOG SLUG]
+    </nav>
+    <a href="/blog/" class="post-back">All Posts</a>
+  </div>
+
+  <div class="pf-post">
+
+    <h1>[FIRST PART OF PAGE HEADING]<em>[SECOND PART OF HEADING GOLD COLOR]</em></h1>
+
+    <div class="pf-post__cover">
+      <img src="https://www.peterfarrarbooks.com/images/[IMAGE FOR BLOG POST]"
+           alt="DESCRIPTION OF IMAGE FOR ALT TAG">
+    </div> 
+    <br>
+    
+    <p>[MAIN PARAGRAPH HERE]</p>
+<br>
+      
+    <h2><em>[MIDPAGE TITLES IN GOLD]</em></h2>
+
+    <p>[SECOND PARAGRAPH]</p>
+<br>
+
+    <p>[LISTS BELOW HERE]</p>
+        
+<ul>
+<li>[CONTOLLED LIST LINE 1]</li>
+<li>[CONTROLLED LIST LINE 2]</li>
+</ul>
+
+<h2><em>[MID PAGE HEADINGS GOLD]</em></h2>
+    
+<p>[PARAGRAPH HERE]</p>
+
+<ul>	
+<li>[LIST HERE]</li>
+<li>[LIST HERE]</li>
+</ul>
+    
+    <p>[PARAGRAPH HERE]</p>
+
+    <h2><em>[MID SENTENCE GOLD HEADING]</em></h2>
+
+<p>[PARAGRAPH HERE]</p>
+
+    <h2><em>[MID PAGE HEADING HERE IN GOLD]</em></h2>
+
+    <p>[PARAGRAPH HERE]</p>
+<ul>
+  <li>[LIST HERE]</li>
+  <li>[LIST HERE]</li>
+</ul>
+
+  <p>[PARAGRAPH]</p>
+
+  <h2><em>[MID PAGE HEADING IN GOLD]</em></h2>
+  
+<p>[PARAGRAPH]</p>
+  
+<ul>
+<li>[LIST HERE]</li>
+<li>[LIST HERE]</li>
+</ul>
+
+  <p>PARAGRAPH HERE</p>
+
+<h2><em>[MID PAGE HEADING HERE IN GOLD]</em></h2>
+
+  <p>[PARAGRAPH HERE]</p>
+
+  
+    <div class="pf-post__table-wrapper">
+    </div>
+
+  </div>
+  <section class="comments-section">
+
+    <p class="comments-section__title">Leave a Comment</p>
+
+    <form id="commentForm" class="comment-form"
+          action="https://formspree.io/f/xjgplodo"
+          method="POST">
+
+      <div class="comment-form__row">
+        <div class="comment-form__field">
+          <label for="comment-name">Name</label>
+          <input id="comment-name" type="text" name="name"
+                 placeholder="Your Name" required>
+        </div>
+        <div class="comment-form__field">
+          <label for="comment-email">
+            Email <span class="comment-form__note-inline">(not published)</span>
+          </label>
+          <input id="comment-email" type="email" name="email"
+                 placeholder="your@email.com" required>
+        </div>
+      </div>
+
+      <div class="comment-form__field">
+        <label for="comment-message">Comment</label>
+        <textarea id="comment-message" name="message"
+                  placeholder="Your comment..." required></textarea>
+      </div>
+
+      <button type="submit">Submit Comment</button>
+      <p class="comment-form__note">Comments are moderated and will appear once approved.</p>
+
+    </form>
+
+    <div class="comment-success" id="commentSuccess">
+      Thank you — your comment has been received and will be reviewed shortly.
+    </div>
+
+  </section>
+
+  <!-- ════ START: APPROVED COMMENTS
+       No comments yet? Leave this block exactly as-is — nothing renders.
+       Have an approved comment? Uncomment the title, add a comment block.
+       ════ -->
+  <div class="approved-comments">
+
+    <!-- Uncomment when you have at least one approved comment:
+    <p class="approved-comments__title">Reader Comments</p>
+    -->
+
+    <!-- EXAMPLE — copy this block for each approved comment, then delete this example -->
+    <!--
+    <div class="comment">
+      <p class="comment-author">John Smith <span>— 5 May 2026</span></p>
+      <p class="comment-text">Really useful post — the section on zones was particularly clear.</p>
+    </div>
+    -->
+
+  </div>
+  <!-- ════ END: APPROVED COMMENTS ════ -->
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo-name">Peter Farrar</span>
+      <span class="logo-sub">Books</span>
+      <p>Author · Photographer · Leadership Expert</p>
+    </div>
+    <div class="footer-nav">
+      <p class="footer-heading">Pages</p>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/books">Published Books</a></li>
+        <li><a href="/coming-soon">Coming 2026</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/coaching">Coaching</a></li>
+        <li><a href="/about">About Peter</a></li>
+        <li><a href="/contact">Contact</a></li> 
+        <li><a href="/privacy">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-nav">
+      <p class="footer-heading">Books</p>
+      <ul>
+        <li><a href="/books#series">Photography Series</a></li>
+        <li><a href="/books#field-guide">Complete Field Guide</a></li>
+        <li><a href="/books#leadership">Leadership: The Culture Fix</a></li>
+        <li><a href="/coming-soon">Coming Soon</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <p class="footer-heading">Connect</p>
+      <ul>
+        <li><a href="https://www.facebook.com/KennethLightStudios/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com/kennethlightstudios/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/pfarrar/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://x.com/Kennethstudios/" target="_blank" rel="noopener">X (Twitter)</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; Peter Farrar. All Rights Reserved. | <a href="/privacy">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+
+<script>
+  const form = document.getElementById('commentForm');
+  const success = document.getElementById('commentSuccess');
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+      form.style.display = 'none';
+      success.style.display = 'block';
+    }
+  });
+</script>
+
+</body>
+</html>
