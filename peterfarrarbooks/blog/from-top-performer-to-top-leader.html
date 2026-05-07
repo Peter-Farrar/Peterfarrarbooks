@@ -360,8 +360,16 @@
 }
 
 .pf-post__cta {
-  margin-top: 60px; border-top: 1px solid rgba(176,133,89,0.2);
-  padding-top: 48px; display: flex; gap: 32px; align-items: flex-start;
+  margin-top: 60px;
+  border-top: 1px solid rgba(176,133,89,0.2);
+  padding-top: 32px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 18px;
+
+  max-width: 520px;
 }
 .pf-post__cta-cover { flex-shrink: 0; width: 100px; }
 .pf-post__cta-cover img { width: 100%; height: auto; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5)); }
