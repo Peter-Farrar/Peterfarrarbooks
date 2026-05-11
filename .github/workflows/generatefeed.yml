@@ -39,6 +39,6 @@ jobs:
             git pull --rebase origin main
             git stash pop
             git add peterfarrarbooks/feed.xml peterfarrarbooks/blog/index.html
-            git commit -m "Auto-update feed.xml and blog index [skip ci]"
+            git commit -m "Auto-update feed.xml and blog index"
             git push
           fi
