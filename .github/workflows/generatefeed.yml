@@ -32,4 +32,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add peterfarrarbooks/feed.xml peterfarrarbooks/blog/index.html
-          git diff --staged --quiet || (git pull --rebase origin main && git commit -m "Auto-update feed.xml and blog index [skip ci]" && git push)
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git stash
+            git pull --rebase origin main
+            git stash pop
+            git add peterfarrarbooks/feed.xml peterfarrarbooks/blog/index.html
+            git commit -m "Auto-update feed.xml and blog index [skip ci]"
+            git push
+          fi
