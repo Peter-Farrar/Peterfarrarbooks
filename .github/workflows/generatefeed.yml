@@ -5,11 +5,12 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   build-feed:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -21,12 +22,12 @@ jobs:
       - name: Install dependencies
         run: pip install beautifulsoup4
 
-      - name: Generate feed.xml
+      - name: Generate feed.xml and blog/index.html
         run: |
           cd peterfarrarbooks
           python generate_feed.py
 
-     - name: Commit changes
+      - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
