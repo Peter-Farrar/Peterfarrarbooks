@@ -7,6 +7,15 @@
     <language>en-gb</language>
     <atom:link href="https://www.peterfarrarbooks.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title><![CDATA[Mastering the Architecture of a Great Landscape (Part Two)]]></title>
+      <link>https://www.peterfarrarbooks.com/blog/mastering-a-great-landscape2.html</link>
+      <guid>https://www.peterfarrarbooks.com/blog/mastering-a-great-landscape2.html</guid>
+      <pubDate>Mon, 18 May 2026 09:00:00 +0000</pubDate>
+      <description><![CDATA[Refinement, Flow, and Bringing Cohesion to Life]]></description>
+      <category>Photography</category>
+      <enclosure url="https://www.peterfarrarbooks.com/images/mastering-2.png" length="0" type="image/jpeg"/>
+    </item>
+    <item>
       <title><![CDATA[Mastering the Architecture of a Great Landscape (Part One)]]></title>
       <link>https://www.peterfarrarbooks.com/blog/mastering-a-great-landscape1</link>
       <guid>https://www.peterfarrarbooks.com/blog/mastering-a-great-landscape1</guid>
@@ -34,13 +43,13 @@
       <enclosure url="https://www.peterfarrarbooks.com/images/managers2.jpg" length="0" type="image/jpeg"/>
     </item>
     <item>
-      <title><![CDATA[Scaling Photography Business]]></title>
-      <link>https://www.peterfarrarbooks.com/blog/scaling-photography-business</link>
-      <guid>https://www.peterfarrarbooks.com/blog/scaling-photography-business</guid>
+      <title><![CDATA[ITIL 4 in Practice: What Companies Expect vs Real Service Management Leadership]]></title>
+      <link>https://www.peterfarrarbooks.com/blog/itil-4-in-practice</link>
+      <guid>https://www.peterfarrarbooks.com/blog/itil-4-in-practice</guid>
       <pubDate>Mon, 20 Apr 2026 09:00:00 +0000</pubDate>
-      <description><![CDATA[How positioning, pricing strategy, and client experience scaled a photography business from $300 to $4,600 per wedding.]]></description>
-      <category>photography</category>
-      <enclosure url="https://www.peterfarrarbooks.com/images/scaling-up.png" length="0" type="image/jpeg"/>
+      <description><![CDATA[A real-world look at ITIL 4 frameworks, service desk leadership, and how culture drives ITSM success over pure theory.]]></description>
+      <category>Leadership</category>
+      <enclosure url="https://www.peterfarrarbooks.com/images/itil-4.png" length="0" type="image/jpeg"/>
     </item>
     <item>
       <title><![CDATA[From Top Performer to Top Leader - Why Great Employees Often Struggle as Managers]]></title>
@@ -61,13 +70,13 @@
       <enclosure url="https://www.peterfarrarbooks.com/images/zone1.jpg" length="0" type="image/jpeg"/>
     </item>
     <item>
-      <title><![CDATA[ITIL 4 in Practice: What Companies Expect vs Real Service Management Leadership]]></title>
-      <link>https://www.peterfarrarbooks.com/blog/itil-4-in-practice</link>
-      <guid>https://www.peterfarrarbooks.com/blog/itil-4-in-practice</guid>
+      <title><![CDATA[Scaling Photography Business]]></title>
+      <link>https://www.peterfarrarbooks.com/blog/scaling-photography-business</link>
+      <guid>https://www.peterfarrarbooks.com/blog/scaling-photography-business</guid>
       <pubDate>Mon, 20 Apr 2026 09:00:00 +0000</pubDate>
-      <description><![CDATA[A real-world look at ITIL 4 frameworks, service desk leadership, and how culture drives ITSM success over pure theory.]]></description>
-      <category>Leadership</category>
-      <enclosure url="https://www.peterfarrarbooks.com/images/itil-4.png" length="0" type="image/jpeg"/>
+      <description><![CDATA[How positioning, pricing strategy, and client experience scaled a photography business from $300 to $4,600 per wedding.]]></description>
+      <category>photography</category>
+      <enclosure url="https://www.peterfarrarbooks.com/images/scaling-up.png" length="0" type="image/jpeg"/>
     </item>
     <item>
       <title><![CDATA[The Zone System Explained - Part Two]]></title>
