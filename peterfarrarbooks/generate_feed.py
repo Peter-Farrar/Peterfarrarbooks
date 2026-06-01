@@ -494,3 +494,38 @@ blog_index = f"""<!DOCTYPE html>
 
 BLOG_INDEX.write_text(blog_index, encoding="utf-8")
 print(f"blog/index.html written — featured: '{featured['title']}', grid: {len(grid_posts)} posts.")
+# ── 3. Update homepage blog preview (latest 2 posts) ──────────
+HOME_INDEX = Path("peterfarrarbooks/index.html")
+if not HOME_INDEX.exists():
+    HOME_INDEX = Path("index.html")
+
+if HOME_INDEX.exists() and len(posts) >= 2:
+    home_content = HOME_INDEX.read_text(encoding="utf-8")
+
+    def home_card(p):
+        cat_label  = category_label(p["section"])
+        return f"""      <article class="blog-card">
+        <div class="blog-card-img">
+          <img src="{p["image"]}" alt="{p["title"]}" width="400" height="250">
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-tag">{cat_label}</span>
+          <h3><a href="{p["rel_url"]}">{p["title"]}</a></h3>
+        </div>
+      </article>"""
+
+    new_cards = home_card(posts[0]) + "\n" + home_card(posts[1])
+
+    new_grid = f'    <div class="blog-grid">\n{new_cards}\n    </div>'
+
+    home_content = re.sub(
+        r'<div class="blog-grid">.*?</div>',
+        new_grid,
+        home_content,
+        flags=re.DOTALL
+    )
+
+    HOME_INDEX.write_text(home_content, encoding="utf-8")
+    print(f"index.html blog preview updated — '{posts[0]['title']}' and '{posts[1]['title']}'.")
+else:
+    print("index.html not found or fewer than 2 posts — skipping homepage update.", file=sys.stderr)
