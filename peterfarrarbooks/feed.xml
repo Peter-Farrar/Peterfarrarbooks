@@ -3,9 +3,17 @@
   <channel>
     <title>Peter Farrar Books - Blog</title>
     <link>https://www.peterfarrarbooks.com/</link>
-    <description>Photography techniques and leadership insights from Peter Farrar Ã¢ÂÂ author of The Complete Photography Field Guide and Leadership: The Culture Fix.</description>
+    <description>Photography techniques and leadership insights from Peter Farrar ÃÂ¢ÃÂÃÂ author of The Complete Photography Field Guide and Leadership: The Culture Fix.</description>
     <language>en-GB</language>
     <atom:link href="https://www.peterfarrarbooks.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What If a Manager Took Control of Your Team</title>
+      <link>https://www.peterfarrarbooks.com/blog/what-if-a-manager-took-control-of-your-team.html</link>
+      <description>When a manager takes control of your team, leadership authority shifts and accountability blurs. Here's what it means for workplace culture.</description>
+      <pubDate>Mon, 15 Jun 2026 11:00:00 GMT</pubDate>
+      <guid>https://www.peterfarrarbooks.com/blog/what-if-a-manager-took-control-of-your-team.html</guid>
+      <media:content url="https://www.peterfarrarbooks.com/images/leadertakeover1.png" medium="image" />
+    </item>
     <item>
       <title>The Lens Sweet Spot - Beyond Just Sharpness</title>
       <link>https://www.peterfarrarbooks.com/blog/thesweet-spot.html</link>
