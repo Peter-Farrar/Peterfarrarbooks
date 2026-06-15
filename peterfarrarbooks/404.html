@@ -1,5 +1,83 @@
 <!DOCTYPE html>
-<html>
-<head><title>404 - Page Not Found</title></head>
-<body><h1>404 - Page Not Found</h1><p>The page you're looking for doesn't exist.</p></body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Peter Farrar Books</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    .error-page {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .error-page h1 {
+      font-size: clamp(4rem, 10vw, 8rem);
+      font-weight: normal;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    .error-page h2 {
+      font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+      font-weight: normal;
+      margin-bottom: 1rem;
+    }
+    .error-page p {
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <a href="/">
+        <span class="logo-name">Peter Farrar</span>
+        <span class="logo-sub">Books</span>
+      </a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/books">Books</a></li>
+        <li><a href="/coming-soon">Coming 2026</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/coaching">Coaching</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="error-page">
+    <div>
+      <h1>404</h1>
+      <h2>Page Not Found</h2>
+      <p>The page you're looking for doesn't exist or has been moved.</p>
+      <a href="/" class="btn btn-primary">Return to Homepage</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; Peter Farrar. All Rights Reserved. | <a href="/privacy">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+
+</body>
 </html>
