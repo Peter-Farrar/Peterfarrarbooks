@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Peter Farrar Books — Blog</title>
+    <link>https://www.peterfarrarbooks.com/</link>
+    <description>Photography techniques and leadership insights from Peter Farrar — author of The Complete Photography Field Guide and Leadership: The Culture Fix.</description>
+    <language>en-GB</language>
+    <atom:link href="https://www.peterfarrarbooks.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Lens Sweet Spot — Beyond Just Sharpness</title>
+      <link>https://www.peterfarrarbooks.com/blog/thesweet-spot.html</link>
+      <description>Why the Sweet Spot Is About Control, Not Perfection</description>
+      <pubDate>Mon, 15 Jun 2026 09:00:00 +0000</pubDate>
+      <guid>https://www.peterfarrarbooks.com/blog/thesweet-spot.html</guid>
+      <media:content url="https://www.peterfarrarbooks.com/images/Lenssweet1.webp" medium="image" />
+    </item>
+    <item>
+      <title>The Leadership Chain</title>
+      <link>https://www.peterfarrarbooks.com/blog/the-leadership-chain.html</link>
+      <description>How Leadership Scales Through an Organisation</description>
+      <pubDate>Mon, 08 Jun 2026 09:00:00 +0000</pubDate>
+      <guid>https://www.peterfarrarbooks.com/blog/the-leadership-chain.html</guid>
+      <media:content url="https://www.peterfarrarbooks.com/images/leadshipchain2.webp" medium="image" />
+    </item>
+    <item>
+      <title>Pushing and Pulling Film, Beyond Exposure</title>
+      <link>https://www.peterfarrarbooks.com/blog/push-pull-film.html</link>
+      <description>Understanding How Push and Pull Techniques Redefine Film's Tonal Behaviour</description>
+      <pubDate>Mon, 01 Jun 2026 09:00:00 +0000</pubDate>
+      <guid>https://www.peterfarrarbooks.com/blog/push-pull-film.html</guid>
+      <media:content url="https://www.peterfarrarbooks.com/images/pushpullfilm2.webp" medium="image" />
+    </item>
+    <item>
+      <title>Why Leadership Matters More Than Ever Now (Part 1)</title>
+      <link>https://www.peterfarrarbooks.com/blog/leadership-matters1.html</link>
+      <description>Leadership in a World That Won't Slow Down</description>
+      <pubDate>Mon, 18 May 2026 09:00:00 +0000</pubDate>
+      <guid>https://www.peterfarrarbooks.com/blog/leadership-matters1.html</guid>
+      <media:content url="https://www.peterfarrarbooks.com/images/leadshipmatter1.webp" medium="image" />
+    </item>
+    <item>
+      <title>The Shadow Side of Success (Part 2)</title>
+      <link>https://www.peterfarrarbooks.com/blog/shadow-side-of-success2.html</link>
+      <description>Why What Difficult Behaviour Is Really Telling You</description>
+      <pubDate>Mon, 11 May 2026 09:00:00 +0000</pubDate>
+      <guid>https://www.peterfarrarbooks.com/blog/shadow-side-of-success2.html</guid>
+      <media:content url="https://www.peterfarrarbooks.com/images/Shad-success2.webp" medium="image" />
+    </item>
+    <item>
+      <title>Mastering the Architecture of a Great Landscape (Part Two)</title>
+      <link>https://www.peterfarrarbooks.com/blog/mastering-a-great-landscape2.html</link>
+      <description>Refinement, Flow, and Bringing Cohesion to Life</description>
+      <pubDate>Mon, 04 May 2026 09:00:00 +0000</pubDate>
+      <guid>https://www.peterfarrarbooks.com/blog/mastering-a-great-landscape2.html</guid>
+      <media:content url="https://www.peterfarrarbooks.com/images/mastering-2.png" medium="image" />
+    </item>
+    <item>
+      <title>Mastering the Architecture of a Great Landscape (Part One)</title>
+      <link>https://www.peterfarrarbooks.com/blog/mastering-a-great-landscape1.html</link>
+      <description>Foundations, Form, and the Principles That Shape Lasting Design</description>
+      <pubDate>Mon, 27 Apr 2026 09:00:00 +0000</pubDate>
+      <guid>https://www.peterfarrarbooks.com/blog/mastering-a-great-landscape1.html</guid>
+      <media:content url="https://www.peterfarrarbooks.com/images/mastering-1.png" medium="image" />
+    </item>
+    <item>
+      <title>Good Managers vs Bad Managers</title>
+      <link>https://www.peterfarrarbooks.com/blog/good-managers-vs-bad-managers.html</link>
+      <description>The Behaviours That Shape Every Workplace</description>
+      <pubDate>Mon, 20 Apr 2026 09:00:00 +0000</pubDate>
+      <guid>https://www.peterfarrarbooks.com/blog/good-managers-vs-bad-managers.html</guid>
+      <media:content url="https://www.peterfarrarbooks.com/images/managers1.jpg" medium="image" />
+    </item>
+    <item>
+      <title>From Top Performer to Top Leader</title>
+      <link>https://www.peterfarrarbooks.com/blog/from-top-performer-to-top-leader.html</link>
+      <description>Why the skills that make you great at your job won't make you a great leader</description>
+      <pubDate>Mon, 13 Apr 2026 09:00:00 +0000</pubDate>
+      <guid>https://www.peterfarrarbooks.com/blog/from-top-performer-to-top-leader.html</guid>
+      <media:content url="https://www.peterfarrarbooks.com/images/author.jpg" medium="image" />
+    </item>
+    <item>
+      <title>ITIL 4 in Practice</title>
+      <link>https://www.peterfarrarbooks.com/blog/itil-4-in-practice.html</link>
+      <description>What Companies Actually Do With ITIL 4</description>
+      <pubDate>Mon, 06 Apr 2026 09:00:00 +0000</pubDate>
+      <guid>https://www.peterfarrarbooks.com/blog/itil-4-in-practice.html</guid>
+      <media:content url="https://www.peterfarrarbooks.com/images/author.jpg" medium="image" />
+    </item>
+    <item>
+      <title>The Zone System Explained (Part One)</title>
+      <link>https://www.peterfarrarbooks.com/blog/zone-system-part-one.html</link>
+      <description>Understanding Ansel Adams' Zone System for Modern Photography</description>
+      <pubDate>Mon, 30 Mar 2026 09:00:00 +0000</pubDate>
+      <guid>https://www.peterfarrarbooks.com/blog/zone-system-part-one.html</guid>
+      <media:content url="https://www.peterfarrarbooks.com/images/zone2.jpg" medium="image" />
+    </item>
+    <item>
+      <title>The Zone System Explained (Part Two)</title>
+      <link>https://www.peterfarrarbooks.com/blog/zone-system-part-two.html</link>
+      <description>Applying the Zone System in Modern Digital Photography</description>
+      <pubDate>Mon, 23 Mar 2026 09:00:00 +0000</pubDate>
+      <guid>https://www.peterfarrarbooks.com/blog/zone-system-part-two.html</guid>
+      <media:content url="https://www.peterfarrarbooks.com/images/zone2.jpg" medium="image" />
+    </item>
+  </channel>
+</rss>
