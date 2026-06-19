@@ -7,6 +7,14 @@
     <language>en-GB</language>
     <atom:link href="https://www.peterfarrarbooks.com/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Building Faster, Smarter Systems</title>
+      <link>https://www.peterfarrarbooks.com/blog/building-faster-smarter-systems.html</link>
+      <description>Automation means every post across my sites takes minutes, not hours, leaving time for photography and creative work.</description>
+      <pubDate>Fri, 19 Jun 2026 11:00:00 GMT</pubDate>
+      <guid>https://www.peterfarrarbooks.com/blog/building-faster-smarter-systems.html</guid>
+      <media:content url="https://www.peterfarrarbooks.com/images/automation.png" medium="image" />
+    </item>
+    <item>
       <title>Do You Really Need More Gear</title>
       <link>https://www.peterfarrarbooks.com/blog/do-you-really-need-more-gear.html</link>
       <description>Improve your photography skills by mastering your camera. Learn why understanding matters more than buying new gear.</description>
