@@ -148,7 +148,8 @@
   <!-- =====================================================
        STYLESHEET
        ===================================================== -->
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="preload" as="image" href="/images/author.jpg" fetchpriority="high">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
 
@@ -193,7 +194,7 @@
       </div>
     </div>
     <div class="hero-image">
-      <img src="https://www.peterfarrarbooks.com/images/author.jpg" alt="Peter Farrar – Author and Photographer" width="383" height="383">
+      <img src="/images/author.jpg" alt="Peter Farrar – Author and Photographer" width="383" height="383" fetchpriority="high" decoding="async">
     </div>
   </div>
 </section>
