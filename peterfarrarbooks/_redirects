@@ -11,6 +11,8 @@
 /2026/04/from-top-performer-to-top-leader-why.html     /blog/from-top-performer-to-top-leader/ 301
 /2026/04/the-zone-system-explained-part-two.html        /blog/zone-system-part-two/             301
 /2026/06/good-managers-vs-bad-managers.html             /blog/good-managers-vs-bad-managers/    301
+/blog/ /blog/index.html 301
+/blog /blog/index.html 301
 
 # ── Old Blogger static page URLs → new site pages ──
 
