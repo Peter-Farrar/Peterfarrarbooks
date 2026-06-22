@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  
+<head>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XW133STPV9"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-XW133STPV9');
 </script>
   <!-- Apple touch and favicon Icons -->
 <link rel="apple-touch-icon" sizes="180x180" href="/images/appletouch.png">
 <link rel="icon" type="image/png" href="/images/appletouch.png">
 
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Privacy Policy for Peter Farrar Books. Learn how personal information is collected, used, and protected when using this website.">
 <meta name="robots" content="index, follow">
@@ -34,6 +33,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://www.peterfarrarbooks.com/images/privacy.jpg">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -53,13 +53,13 @@
       "url": "https://www.peterfarrarbooks.com/about",
       "jobTitle": "Author, Photographer and Leadership Expert",
       "description": "Author of leadership and photography books with 30+ years experience",
-"sameAs": [
-  "https://www.facebook.com/peterfarrarportraits/",
-  "https://www.instagram.com/peterfarrarportraits/",
-  "https://x.com/peterfportraits/",
-  "https://www.threads.com/@peterfarrarportraits/",
-  "https://www.linkedin.com/in/pfarrar/"
-],
+      "sameAs": [
+        "https://www.facebook.com/peterfarrarportraits/",
+        "https://www.instagram.com/peterfarrarportraits/",
+        "https://x.com/peterfportraits/",
+        "https://www.threads.com/@peterfarrarportraits/",
+        "https://www.linkedin.com/in/pfarrar/"
+      ]
     }
   ]
 }
@@ -73,7 +73,114 @@
 }
 </script>
 
-<link rel="stylesheet" href="css/styles.css">
+<style>
+/* --- VARIABLES --- */
+:root {
+  --bg:         #0d0d0d;
+  --bg-mid:     #161616;
+  --bg-card:    #1e1e1e;
+  --gold:       #c4953d;
+  --text:       #e8e4dc;
+  --text-muted: #a09890;
+  --border:     #2a2a2a;
+  --border-mid: #333333;
+  --font-serif: Georgia, 'Times New Roman', serif;
+  --font-sans:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --radius:     4px;
+  --shadow-lg:  0 8px 48px rgba(0,0,0,0.70);
+  --transition: 0.2s ease;
+  --max-width:  1100px;
+}
+
+/* --- RESET --- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body { font-family: var(--font-serif); color: var(--text); background: var(--bg); line-height: 1.7; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--text-muted); text-decoration: none; transition: color var(--transition); }
+a:hover { color: var(--gold); }
+ul { list-style: none; }
+
+/* --- CONTAINER --- */
+.container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+
+/* --- HEADER --- */
+.site-header { background: var(--bg-mid); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+.logo a { display: flex; align-items: baseline; gap: 6px; text-decoration: none; }
+.logo-name { font-family: var(--font-serif); font-size: 1.25rem; color: var(--text); font-weight: normal; letter-spacing: 0.02em; }
+.logo-sub { font-family: var(--font-sans); font-size: 0.72rem; color: var(--gold); text-transform: uppercase; letter-spacing: 0.14em; font-weight: 600; }
+.site-nav ul { display: flex; gap: 2px; align-items: center; }
+.site-nav a {
+  color: var(--text-muted);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: var(--radius);
+  letter-spacing: 0.04em;
+  transition: all var(--transition);
+  text-transform: uppercase;
+}
+.site-nav a:hover { color: var(--gold); }
+.nav-toggle { display: none; background: none; border: none; color: var(--text); font-size: 1.4rem; cursor: pointer; padding: 8px; }
+
+/* --- PAGE HERO --- */
+.page-hero { background: var(--bg); border-bottom: 1px solid var(--border); padding: 56px 0 48px; text-align: center; }
+.page-hero h1 { font-family: var(--font-serif); font-size: clamp(1.8rem, 3vw, 2.6rem); color: var(--text); font-weight: normal; margin-bottom: 12px; }
+.page-hero p { color: var(--text-muted); font-size: 1rem; max-width: 560px; margin: 0 auto; font-style: italic; }
+.page-hero .breadcrumb { font-family: var(--font-sans); font-size: 0.75rem; color: var(--gold); text-transform: uppercase; letter-spacing: 0.14em; margin-bottom: 16px; }
+
+/* --- PRIVACY --- */
+.privacy-section { padding: 80px 0; max-width: 760px; margin: 0 auto; background: var(--bg); }
+.privacy-section h2 {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: var(--text);
+  margin: 36px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  font-weight: normal;
+}
+.privacy-section p,
+.privacy-section li {
+  color: var(--text-muted);
+  font-size: 0.97rem;
+  margin-bottom: 12px;
+  line-height: 1.8;
+}
+.privacy-section ul { padding-left: 20px; list-style: disc; }
+.privacy-section a { color: var(--gold); }
+.privacy-section a:hover { color: var(--text-muted); }
+
+/* --- FOOTER --- */
+.site-footer { background: var(--bg-mid); border-top: 1px solid var(--border); padding: 60px 0 0; color: var(--text-muted); }
+.footer-inner { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 48px; border-bottom: 1px solid var(--border); }
+.footer-brand .logo-name { font-family: var(--font-serif); font-size: 1.15rem; color: var(--text); }
+.footer-brand .logo-sub { font-family: var(--font-sans); font-size: 0.7rem; color: var(--gold); text-transform: uppercase; letter-spacing: 0.14em; font-weight: 600; margin-left: 6px; }
+.footer-brand p { font-size: 0.875rem; margin-top: 12px; color: var(--text-muted); line-height: 1.6; }
+.footer-heading { font-family: var(--font-sans); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--gold); margin-bottom: 16px; font-weight: 700; }
+.footer-nav ul li, .footer-social ul li { margin-bottom: 8px; }
+.footer-nav a, .footer-social a { color: var(--text-muted); font-size: 0.875rem; transition: color var(--transition); }
+.footer-nav a:hover, .footer-social a:hover { color: var(--gold); }
+.footer-bottom { padding: 20px 0; background: var(--bg); border-top: 1px solid var(--border); }
+.footer-bottom p { font-family: var(--font-sans); font-size: 0.78rem; color: var(--text-muted); text-align: center; }
+.footer-bottom a { color: var(--text-muted); }
+.footer-bottom a:hover { color: var(--gold); }
+
+/* --- RESPONSIVE --- */
+@media (max-width: 900px) {
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .site-nav { display: none; position: absolute; top: 68px; left: 0; right: 0; background: var(--bg-mid); border-bottom: 1px solid var(--border); flex-direction: column; padding: 16px 0; box-shadow: var(--shadow-lg); }
+  .site-nav.open { display: flex; }
+  .site-nav ul { flex-direction: column; gap: 0; width: 100%; }
+  .site-nav a { display: block; padding: 12px 24px; border-radius: 0; }
+  .nav-toggle { display: block; }
+  .footer-inner { grid-template-columns: 1fr; gap: 28px; }
+}
+</style>
 </head>
 
 <body>
@@ -81,10 +188,7 @@
 <header class="site-header">
   <div class="container header-inner">
     <div class="logo">
-      <a href="/">
-        <span class="logo-name">Peter Farrar</span>
-        <span class="logo-sub">Books</span>
-      </a>
+      <a href="/"><span class="logo-name">Peter Farrar</span><span class="logo-sub">Books</span></a>
     </div>
     <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
     <nav class="site-nav">
@@ -105,24 +209,20 @@
   <div class="container">
     <p class="breadcrumb">Legal</p>
     <h1>Privacy Policy</h1>
-    <p class="page-intro">
-      How personal information is collected, used, and protected when using this website.
-    </p>
+    <p>How personal information is collected, used, and protected when using this website.</p>
   </div>
 </section>
 
 <div class="container">
   <section class="privacy-section">
-    
-    <div style="display: flex; justify-content: center; margin-bottom: 40px;">
+
+    <div style="display:flex; justify-content:center; margin-bottom:40px;">
       <img src="images/privacy.jpg" alt="Privacy Policy and Data Protection" style="max-width:860px; width:100%; height:auto; border-radius:4px;">
     </div>
 
     <p><strong>Last updated: April 2026</strong></p>
 
-    <p>
-      This Privacy Policy explains how peterfarrarbooks.com ("the website") collects, uses, and protects any information provided when using this website.
-    </p>
+    <p>This Privacy Policy explains how peterfarrarbooks.com ("the website") collects, uses, and protects any information provided when using this website.</p>
 
     <h2>1. Information Collected</h2>
     <p>This website may collect:</p>
@@ -133,43 +233,27 @@
     </ul>
 
     <h2>2. How Information Is Used</h2>
-    <p>
-      Contact form data is used only to respond to enquiries and is not sold or used for unsolicited marketing.
-    </p>
-    <p>
-      Analytics data is used to improve website usability and performance and does not identify individual users.
-    </p>
+    <p>Contact form data is used only to respond to enquiries and is not sold or used for unsolicited marketing.</p>
+    <p>Analytics data is used to improve website usability and performance and does not identify individual users.</p>
 
     <h2>3. Cookies</h2>
-    <p>
-      This website uses minimal cookies. Analytics cookies, if present, are anonymised. You can disable cookies in your browser settings.
-    </p>
+    <p>This website uses minimal cookies. Analytics cookies, if present, are anonymised. You can disable cookies in your browser settings.</p>
 
     <h2>4. Third-Party Links</h2>
-    <p>
-      This website links to third-party sites such as Amazon. These sites have their own privacy policies. This website is not responsible for their content or data practices.
-    </p>
+    <p>This website links to third-party sites such as Amazon. These sites have their own privacy policies. This website is not responsible for their content or data practices.</p>
 
     <h2>5. Data Storage</h2>
-    <p>
-      No sensitive personal data is collected. Contact form submissions are processed securely.
-    </p>
+    <p>No sensitive personal data is collected. Contact form submissions are processed securely.</p>
 
     <h2>6. Your Rights</h2>
-    <p>
-      Under UK GDPR, you have the right to access, correct, or request deletion of your personal data. 
-      Please use the <a href="/contact">contact page</a> to make a request.
-    </p>
+    <p>Under UK GDPR, you have the right to access, correct, or request deletion of your personal data. Please use the <a href="/contact">contact page</a> to make a request.</p>
 
     <h2>7. Policy Updates</h2>
-    <p>
-      This policy may be updated periodically. The update date at the top reflects the latest revision.
-    </p>
+    <p>This policy may be updated periodically. The update date at the top reflects the latest revision.</p>
 
     <h2>8. Contact</h2>
-    <p>
-      For questions about this policy, please use the <a href="/contact">contact page</a>.
-    </p>
+    <p>For questions about this policy, please use the <a href="/contact">contact page</a>.</p>
+
   </section>
 </div>
 
@@ -179,9 +263,8 @@
       <span class="logo-name">Peter Farrar</span><span class="logo-sub">Books</span>
       <p>Author · Photographer · Leadership Expert</p>
     </div>
-
     <div class="footer-nav">
-      <h3>Pages</h3>
+      <h3 class="footer-heading">Pages</h3>
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/books">Published Books</a></li>
@@ -193,18 +276,16 @@
         <li><a href="/privacy">Privacy Policy</a></li>
       </ul>
     </div>
-
     <div class="footer-nav">
-      <h3>Books</h3>
+      <h3 class="footer-heading">Books</h3>
       <ul>
         <li><a href="/books#series">Photography Series</a></li>
         <li><a href="/books#field-guide">Complete Field Guide</a></li>
         <li><a href="/books#leadership">Leadership: The Culture Fix</a></li>
       </ul>
     </div>
-
     <div class="footer-social">
-      <h3>Connect</h3>
+      <h3 class="footer-heading">Connect</h3>
       <ul>
         <li><a href="https://www.facebook.com/peterfarrarportraits/" target="_blank" rel="noopener">Facebook</a></li>
         <li><a href="https://www.instagram.com/peterfarrarportraits/" target="_blank" rel="noopener">Instagram</a></li>
@@ -214,7 +295,6 @@
       </ul>
     </div>
   </div>
-
   <div class="footer-bottom">
     <div class="container">
       <p>&copy; Peter Farrar. All Rights Reserved. | <a href="/privacy">Privacy Policy</a></p>
@@ -222,6 +302,11 @@
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const siteNav = document.querySelector('.site-nav');
+  navToggle.addEventListener('click', () => siteNav.classList.toggle('open'));
+</script>
+
 </body>
 </html>
