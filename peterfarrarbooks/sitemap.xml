@@ -38,10 +38,15 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.peterfarrarbooks.com/contact</loc>
+    <loc>https://www.peterfarrarbooks.com/</loc>
     <lastmod>2026-06-22</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url><url>
+    <loc>https://www.peterfarrarbooks.com/peter-farrar-portraits</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
   <!-- Blog posts -->
   <url>
