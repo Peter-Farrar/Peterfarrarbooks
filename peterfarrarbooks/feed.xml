@@ -7,6 +7,14 @@
     <language>en-GB</language>
     <atom:link href="https://www.peterfarrarbooks.com/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>The Interview Trap</title>
+      <link>https://www.peterfarrarbooks.com/blog/the-interview-trap</link>
+      <description>Companies can spend weeks interviewing candidates and still get recruitment wrong. Some people interview brilliantly but perform poorly, while experienced professionals can be rejected simply because they do not perform well under interview pressure.</description>
+      <pubDate>Mon, 07 Sep 2026 11:00:00 GMT</pubDate>
+      <guid>https://www.peterfarrarbooks.com/blog/the-interview-trap</guid>
+      <media:content url="https://www.peterfarrarbooks.com/images/interviewing.png" medium="image" />
+    </item>
+    <item>
       <title>What AI Really Means for You</title>
       <link>https://www.peterfarrarbooks.com/blog/what-ai-really-means-for-you</link>
       <description>AI is changing the world. But separating reality from hype is becoming harder. AI Reality explains what artificial intelligence really means, what it can do, where it fails and why understanding AI matters to all of us.</description>
