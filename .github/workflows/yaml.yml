@@ -1,11 +1,13 @@
 name: Deploy to GitHub Pages
-concurrency:
-group: github-pages
-cancel-in-progress: true
-on:
+
+"on":
   push:
     branches:
       - main
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
 
 permissions:
   contents: read
@@ -30,7 +32,7 @@ jobs:
       - name: Upload website
         uses: actions/upload-pages-artifact@v4
         with:
-          path: 'peterfarrarbooks'
+          path: peterfarrarbooks
 
       - name: Deploy to GitHub Pages
         id: deployment
